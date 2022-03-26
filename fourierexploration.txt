@@ -1,0 +1,38 @@
+Consider a function f(x) that is periodic on the interval 0 ≤ x ≤ L. An example is shown
+in Fig. 1. Fourier’s theorem works even if f(x) isn’t continuous, although an interesting thing
+x
+f(x)
+L
+Figure 1 happens at the discontinuities, which we’ll talk about in Section 3.6. Other conventions for
+the interval are −L ≤ x ≤ L, or 0 ≤ x ≤ 1, or −π ≤ x ≤ π, etc. There are many different
+conventions, but they all lead to the same general result in the end. If we assume 0 ≤ x ≤ L
+periodicity, then Fourier’s theorem states that f(x) can be written as
+f(x) = a0 +
+X∞
+n=1
+·
+an cos µ
+2πnx
+L
+¶
++ bn sin µ
+2πnx
+L
+¶¸ (1)
+where the an and bn coefficients take on certain values that we will calculate below. This
+expression is the Fourier trigonometric series for the function f(x). We could alternatively
+not separate out the a0 term, and instead let the sum run from n = 0 to ∞, because
+cos(0) = 1 and sin(0) = 0. But the normal convention is to isolate the a0 term.
+With the 2π included in the arguments of the trig functions, the n = 1 terms have period
+L, the n = 2 terms have period L/2, and so on. So for any integer n, an integral number
+of oscillations fit into the period L. The expression in Eq. (1) therefore has a period of (at
+most) L, which is a necessary requirement, of course, for it to equal the original periodic
+function f(x). The period can be shorter than L if, say, only the even n’s have nonzero
+coefficients (in which case the period is L/2). But it can’t be longer than L; the function
+repeats at least as often as with period L.
+We’re actually making two statements in Eq. (1). The first statement is that any periodic
+function can be written this way. This is by no means obvious, and it is the part of the
+theorem that we’re accepting here. The second statement is that the an and bn coefficients
+take on particular values, assuming that the function f(x) can be written this way. It’s
+reasonably straightforward to determine what these values are, in terms of f(x), and we’ll
+do this below. But we’ll first need to discuss the concept of orthogonal functions.
